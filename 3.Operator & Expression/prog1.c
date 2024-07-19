@@ -1,4 +1,7 @@
 /*
+
+// Q1. Write a Program to evaluate the formula: (x + y)2
+
 #include<stdio.h>
 void main(){
     int x,y;
@@ -11,6 +14,9 @@ void main(){
 */
 
 /*
+
+//Q2. Write a Program to evaluate the formula: (x − y)2
+
 #include<stdio.h>
 void main(){
     int x,y;
@@ -23,6 +29,9 @@ void main(){
 */
 
 /*
+
+//Q3. Write a Program to evaluate the formula: (x + y)3
+
 #include<stdio.h>
 void main(){
     int x,y;
@@ -35,6 +44,9 @@ void main(){
 */
 
 /*
+
+//Q4.Write a Program to Swap two variables using the third variable.
+
 #include<stdio.h>
 void main(){
     int a =5 , b =10 ,c;
@@ -48,6 +60,8 @@ void main(){
 
 
 /*
+//Q5.Write a Program to Swap two variables without using a third variable.
+
 #include<stdio.h>
 void main(){
     int a =5 , b =10;

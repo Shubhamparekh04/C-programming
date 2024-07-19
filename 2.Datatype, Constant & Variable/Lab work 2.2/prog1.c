@@ -1,4 +1,8 @@
 /*
+
+// Q1. Write a Program to find the area of a circle.
+
+
 #include<stdio.h>
 #define PI 3.14
 void main(){
@@ -12,6 +16,11 @@ void main(){
 */
 
 /*
+
+
+// Q2. Write a Program to find the area of a rectangle..
+
+
 #include<stdio.h>
 void main(){
     int l;
@@ -25,6 +34,9 @@ void main(){
 */
 
 /*
+
+// Q3. Write a Program to find the area of a triangle.
+
 #include<stdio.h>
 void main(){
     float b,h;
@@ -39,6 +51,9 @@ void main(){
 */
 
 /*
+
+// Q4. Write a Program to find Simple interest.
+
 Write a Program to find Simple interest.
 Use Formula: p x r x n
 100
@@ -46,6 +61,9 @@ Where p is the principal amount, r is the rate, and n is time in a month
 */
 
 /*
+
+//Q5.Write a Program to find the Perimeter of the circle. 
+
 #include<stdio.h>
 void main(){
        float p,r,n;
