@@ -1,4 +1,6 @@
 /*
+//Calculate average marks & assign Grade accordingly.
+
 #include<stdio.h>
 void main(){
 int rno;
@@ -45,31 +47,34 @@ if(sub1>=35 && sub2>=35 && sub3>=35){
 
 /*
 
+//Calculate Bill & apply discount accordingly
+
 #include<stdio.h>
 void main(){
-    float Bill,price,dis,ntotal;
+    float price,ntotal;
     int qty;
     char pname[20];
 
-    printf("Enter Product Name:");
+    printf("\nEnter Product Name: ");
     scanf("%s",&pname);
 
-    printf("Enter Quantity:");
+    printf("Enter Quantity: ");
     scanf("%d",&qty);
 
-    printf("Enter price per product:");
+    printf("Enter price per product: ");
     scanf("%f",&price);
 
     ntotal=qty*price;
 
     if(ntotal>=1500){
-        printf("Bill is %.2f , Discount is : 15%%",(ntotal*15)/100);
+        printf("Gross Amount : %.2f\nApplied discount : 15%%(%.2f)\nNet-total: %.2f",ntotal,(ntotal*0.15),ntotal-(ntotal*0.15));
     }else if(ntotal>=1000){
-        printf("Bill is %.2f , Discount is : 10%%",(ntotal*10)/100);
+        printf("Gross Amount : %.2f\nApplied discount : 10%%(%.2f)\nNet-total: %.2f",ntotal,(ntotal*0.10),ntotal-(ntotal*0.10));
     }else if(ntotal>=800){
-        printf("Bill is %.2f , Discount is : 8%%",(ntotal*8)/100);
+        printf("Gross Amount : %.2f\nApplied discount : 8%%(%.2f)\nNet-total: %.2f",ntotal,(ntotal*0.8),ntotal-(ntotal*0.8));
     }else{
-        printf("Bill is %.2f , Discount is : 0%%",ntotal);
+        printf("Gross Amount : %.2f\nApplied discount : 0%%(%.2f)\nNet-total: %.2f",ntotal,(ntotal*0.0),ntotal-(ntotal*0.0));
     }
+    printf("\n\n");
 }
 */
