@@ -14,7 +14,7 @@ void main()
 
 
 /*
-//Write a Program to create a menu-driven program for Telecom call service conversation using nested switch case.
+//Q2.Write a Program to create a menu-driven program for Telecom call service conversation using nested switch case.
 
 #include<stdio.h>
 void main(){
