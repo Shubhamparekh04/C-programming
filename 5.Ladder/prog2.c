@@ -1,5 +1,6 @@
 /*
 //Project: Student Grading System with Flowchart and Nested Control Structures
+*/
 
 #include<stdio.h>
 void main(){
@@ -49,4 +50,3 @@ do{
 }while(choice!=3);
 
 }
-*/
