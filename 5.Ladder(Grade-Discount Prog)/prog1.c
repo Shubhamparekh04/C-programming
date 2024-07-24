@@ -1,5 +1,5 @@
 /*
-//Calculate average marks & assign Grade accordingly.
+// Calculate average marks & assign Grade accordingly.
 
 #include<stdio.h>
 void main(){
@@ -29,19 +29,21 @@ if(sub1>=35 && sub2>=35 && sub3>=35){
         printf("A");
     }else if(avg>=80){
         printf("B");
-    }else if(avg>=60){
+    }else if(avg>=70){
         printf("C");
-    }else{
+    }else if(avg>=60){
         printf("D");
+    }else{
+        printf("F");
     }
 
 }else{
-    printf("Naapas");
+    printf("FAIL😭");
 }
 
 }
+
 */
-
 
 
 
