@@ -398,7 +398,7 @@ for(int l=0;l<=8;l++){
 */
 
 
-
+/*
 #include<stdio.h>
 void main(){
     int loc,a[30]={10,20,30,40,50};
@@ -419,6 +419,61 @@ void main(){
        printf ("%d\n",a[k]);
     }
 }
+*/
+
+
+/*
+//Dynamically adding 2nd array into 1st one
+#include<stdio.h>
+void main(){
+    int l1,l2,arr1[50],arr2[50],loc;
+
+//Array 1
+    printf("Arr1 What length you required: ");
+    scanf("%d",&l1);
+
+    printf("Enter %d values in array arr1 :\n",l1);
+    for(int i=0;i<l1;i++){
+        scanf("%d",&arr1[i]);
+    }
+
+//Array 2
+
+    printf("Arr2 What length you required: ");
+    scanf("%d",&l2);
+
+    printf("Enter %d values in array arr1 :\n",l2);
+    for(int j=0;j<l2;j++){
+        scanf("%d",&arr2[j]);
+    }
+
+
+// Location
+printf("Enter at what location to enter arr2 in arr1 : ");
+scanf("%d",&loc);
+
+//shifting
+for(int k=l1-1;k>=loc;k--){
+   arr1[k+l2] =arr1[k];
+}
+
+// inserting 2nd array into 1st one
+for(int l=0;l<l2;l++){
+   arr1[l+loc]= arr2[l];
+}
+
+
+// printing 1st array
+for(int m=0;m<=(l1+l2-1);m++){
+    printf("\n%d",arr1[m]);
+}
+
+}
+
+*/
+
+
+
 
 
 
