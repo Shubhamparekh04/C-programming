@@ -198,3 +198,37 @@ void main(){
 
 }
 */
+
+
+/*
+
+// Array of structures
+struct test{
+    int eno;
+    char ename[20];
+    float esal;
+};
+
+#include<stdio.h>
+void main(){
+
+struct test e[3];
+
+for(int i=0;i<3;i++){
+    printf("\nEnter eno for %d employee: ",i);
+    scanf("%d",&e[i].eno);
+
+    printf("Enter ename for  %d employee: ",i);
+    scanf("%s",&e[i].ename);
+
+    printf("Enter Salary for  %s : ",e[i].ename);
+    scanf("%f",&e[i].esal);
+}
+
+
+for(int j=0;j<3;j++){
+    printf("\nid: %d\nName : %s\nSalary: %.2f\n",e[j].eno,e[j].ename,e[j].esal);
+}
+
+}
+*/
