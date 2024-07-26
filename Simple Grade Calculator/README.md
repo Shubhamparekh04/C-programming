@@ -1,2 +1,3 @@
 #Simple Grade Calculator
-![image](https://github.com/user-attachments/assets/7227f8a0-b5da-487f-82be-26506ecbcf6e)
+![image](https://github.com/user-attachments/assets/96df6f53-0d46-4426-ab3e-1756bb6c94a0)
+
