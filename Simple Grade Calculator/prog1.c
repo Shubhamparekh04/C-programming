@@ -10,13 +10,15 @@ void main()
 {
     float s1, s2, s3, total, avg;
     char grade;
-    printf("Enter 3 subject marks: ");
+    printf("\nEnter 3 subject marks: ");
     scanf("%f %f %f", &s1, &s2, &s3);
 
     total = s1 + s2 + s3;
     avg = total / 3;
 
     grade = avg >= 90 ? 'A' : avg >= 80 ? 'B' : avg >= 70   ? 'C': avg >= 60   ? 'D' : 'F';
+
+    printf("Average :%.f\n",avg);
 
     switch (grade)
     {
@@ -30,12 +32,8 @@ void main()
         printf("Your grade is %c. Nice Work!", grade);
         break;
     case 'D':
-        printf("Your grade is %c. Excellent work!", grade);
+        printf("Your grade is %c. Good!", grade);
         break;
-    case 'E':
-        printf("Your grade is %c. Excellent work!", grade);
-        break;
-
     default:
         printf("Your grade is %c. You Are fail!", grade);
         break;
@@ -43,10 +41,10 @@ void main()
 
     if (grade == 'A' || grade == 'B' || grade == 'C' || grade == 'D')
     {
-        printf("\nCongratulations! You are eligible for the next level, your grade is : %c", grade);
+        printf("\nCongratulations! You are eligible for the next level, your grade is : %c\n\n", grade);
     }
     else
     {
-        printf("\nPlease try again next time your grade is %c.", grade);
+        printf("\nPlease try again next time your grade is %c.\n", grade);
     }
 }
