@@ -26,7 +26,7 @@ void main(){
     }
 
 printf("Length is :%d ",ct);
-   
+
 }
 */
 
@@ -55,8 +55,6 @@ void main(){
 }
 */
 
-
-
 /*
 // user define function for string length
 
@@ -82,7 +80,6 @@ void main(){
     printf("Length is : %d",len);
 }
 */
-
 
 /*
 //uppercase character string to lowercase
@@ -160,7 +157,7 @@ void main(){
 /*
 // Structure
 
-//Declare structure 
+//Declare structure
 struct emp{
     int eno; // 4 bytes
     char ename[20]; // 20 bytes
@@ -199,7 +196,6 @@ void main(){
 }
 */
 
-
 /*
 
 // Array of structures
@@ -233,4 +229,128 @@ for(int j=0;j<3;j++){
 }
 */
 
+/*
+//Array inside structure
 
+struct student{
+    int rno;
+    char sname[20];
+    int smarks[3];
+};
+
+#include<stdio.h>
+void main(){
+
+    struct student s[3];
+
+    for(int i=0;i<3;i++){
+        printf("\nEnter rno: ");
+        scanf("%d",&s[i].rno);
+
+        printf("Enter Student Name: ");
+        scanf("%s",&s[i].sname);
+
+        for(int j=0;j<3;j++){
+            printf("Enter marks of sub%d : ",j+1);
+            scanf("%d",&s[i].smarks[j]);
+        }
+    }
+
+
+printf("------------------------------------------------------------------------\n");
+
+    for(int k=0;k<3;k++){
+
+        printf("\n\nRoll no:%d\nStudent Name : %s\n",s[k].rno,s[k].sname);
+
+        for(int l=0;l<3;l++){
+            printf("Subject %d marks : %d\n",l+1,s[k].smarks[l]);
+        }
+
+    }
+
+}
+*/
+
+/*
+//Unions
+
+union test{
+    int a;
+    int b;
+};
+
+#include<stdio.h>
+void main(){
+    union test e;
+
+    e.a = 10;
+    printf("%d",e.b);//10
+}
+*/
+
+/*
+// Recursion
+int facto (int x){
+    if(x==1){
+        return 1;
+    }else{
+     return x*facto(x-1);
+    }
+}
+
+#include<stdio.h>
+void main(){
+    int n,fact=1;
+    printf("Enter number :");
+    scanf("%d",&n);
+
+    // for(int i=1;i<=n;i++){
+    //     fact =fact*i;
+    // }
+
+    printf("factorial is : %d",facto(5));
+}
+
+*/
+
+/*
+//pointer
+
+#include<stdio.h>
+void main(){
+    int i=100;
+    int* ptr;
+
+    ptr = &i;
+
+    printf("%d\n",i);//100
+    printf("%u\n",ptr);//address of i
+    printf("%u\n",&i);//address of i
+    printf("%u\n",&ptr);//address of ptr
+    printf("%d\n",*ptr);//100
+    printf("%d\n",*(&i));//100
+
+}
+*/
+
+/*
+// Size of pointer
+
+struct emp {
+    int eno;
+    char ename[20];
+    float esal;
+};
+
+#include<stdio.h>
+void main(){
+    char* cp;
+    int* ip;
+    struct emp*  e;
+
+    printf("%d\n",sizeof(cp));// 4
+    printf("%d\n",sizeof(ip));// 4
+    printf("%d\n",sizeof(e));// 4
+}
+*/
