@@ -354,3 +354,155 @@ void main(){
     printf("%d\n",sizeof(e));// 4
 }
 */
+
+/*
+//call by value (no link between called function & main function());
+
+void swap(int x, int y)
+{
+    int temp = x;
+    x = y;
+    y = temp;
+
+    printf("Inside function after swap  x=%d , y=%d ", x, y);
+};
+
+void swap(int, int);
+#include <stdio.h>
+void main()
+{
+    int a = 10, b = 20;
+
+    printf("Before swap a= %d , b= %d\n", a, b);
+    swap(a, b);// call by value
+    printf("\nAfter swap a= %d , b= %d\n", a, b);
+}
+*/
+
+/*
+// Call by reference (passing reference as argument so changes occur inside refrence value with the help of pointer)
+
+void swap(int*,int*);
+#include <stdio.h>
+void main()
+{
+    int a = 10, b = 20;
+
+    void swap(int* x,int* y)
+    {
+        int temp = *x;
+        *x = *y;
+        *y = temp;
+
+        printf("Inside function after swap  x=%d , y=%d ", *x, *y);
+    };
+
+    printf("Before swap a= %d , b= %d\n", a, b);
+    swap(&a, &b);// call by reference
+    printf("\nAfter swap a= %d , b= %d\n", a, b);
+}
+*/
+
+
+/*
+//pointer to function
+
+
+// Direct function call
+int add(int x, int y){
+    int z= x+y;
+    return z;
+}
+
+int multi(int x,int y, int z){
+    int w = x*y*z;
+    return w;
+}
+
+#include<stdio.h>
+void main(){
+int r1,r2;
+
+r1 = add(10,20);
+printf("Add : %d\n",r1);//30
+
+r2 = multi(2,3,4);
+printf("Multi : %d\n",r2);//24
+
+}
+
+////////////////////////////////////////////////////
+
+// Calling function by pointer reference
+int add(int x, int y){
+    int z= x+y;
+    return z;
+}
+
+int multi(int x,int y, int z){
+    int w = x*y*z;
+    return w;
+}
+#include<stdio.h>
+void main(){
+
+// pointer to function declaration
+int ans,a=10,b=20;
+int  (*ptr) (int,int); // declaration of pointer to function it's mandatory to declare (*identifier) inside () in this case "(*ptr)."
+
+ptr =&add;
+// ptr =&multi // incompatible pointer assignment; (because it takes 3 arguments but in line 451 function pointer declaration has (int,int) only 2 so it will target add()function)
+ans=ptr(a,b);
+printf("Add : %d\n",ans);//30
+
+}
+*/
+
+
+/*
+//Dynamic memory Allocation - malloc() for allocating memory to structure.
+
+
+struct emp{
+int eno;
+char ename[20];
+float esal;
+};
+
+#include<stdio.h>
+#include<stdlib.h>
+void main(){
+ struct emp* ptr;
+ ptr  = (struct emp*)  malloc(sizeof(struct emp));
+
+ if(ptr==NULL){
+    printf("No memory allocation");
+ }else{
+    printf("Enter eno,ename & esal\n");
+    scanf("%d %s %f",&ptr->eno,ptr->ename,&ptr->esal);
+ }
+
+
+
+printf("Eno : %d\nEname:%s\nEsal: %.2f",ptr->eno,ptr->ename,ptr->esal);
+
+}
+
+
+
+//calloc - allocate memory to array
+
+#include<stdio.h>
+#include<stdlib.h>
+void main(){
+    int* arr;
+    arr = (int*) calloc(5,sizeof(int));
+
+    arr[0]=1;
+
+    for(int i=0;i<=5;i++){
+        printf("%d\n",arr[i]);
+    }
+}
+
+*/
