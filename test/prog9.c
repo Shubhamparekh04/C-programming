@@ -403,7 +403,6 @@ void main()
 }
 */
 
-
 /*
 //pointer to function
 
@@ -458,7 +457,6 @@ printf("Add : %d\n",ans);//30
 }
 */
 
-
 /*
 //Dynamic memory Allocation - malloc() for allocating memory to structure.
 
@@ -506,3 +504,34 @@ void main(){
 }
 
 */
+
+/*
+// relloc()
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+    int  *arr,capacity=5;
+
+    arr = (int*)calloc (capacity,sizeof(int));
+
+    for(int i=0;i<capacity;i++){
+        printf("%d ",*(arr+i));
+    }
+
+
+    capacity++;
+
+   arr = (int*)realloc(arr,capacity*sizeof(int));
+
+    printf("\n\n");
+
+    for(int i=0;i<=capacity;i++){
+        printf("%d ",*(arr+i));
+    }
+
+}
+
+

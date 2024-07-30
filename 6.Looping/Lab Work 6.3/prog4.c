@@ -5,58 +5,47 @@
 1 6 11 16
 1 17 33 49 65
 */
-/**/
-
 
 #include <stdio.h>
+
 void main()
 {
-
-    int fg = 1, a = 1, b = 1, c = 0, d = 0;
-    ;
-
     for (int i = 1; i <= 5; i++)
     {
+        int sum = 0,a = 1;
         for (int j = 1; j <= i; j++)
         {
             if (j == 1)
             {
-                printf("%d ", fg);
+                printf("1 ");
             }
             else
             {
-                if (j == 2)
+                if (i == 2 && j != 1)
                 {
-                    a = 1;
-                    c = a + b;
-                    printf("%d ", c);
-                    a = b;
-                    b = c;
-                    d = 1;
+                    sum =  a + 1;
+                    printf("%d ", sum);
                 }
-                else
+                else if (i == 3 && j != 1)
                 {
-                    if (j==4 && d==0)
-                    {
-                        a=c;
-                        c=a+b;
-                        printf("%d ",c);
-                        d=0;
-                    }
-                    else
-                    {
-                        c = a + b;
-                        printf("%d ", c);
-                        a = b;
-                        b = c;
-                    }
+                    sum = a + 2;
+                    printf("%d ", sum);
+                    a = sum;
+                }
+                else if (i == 4 && j != 1)
+                {
+                    sum = a + 5;
+                    printf("%d ", sum);
+                    a = sum;
+                }
+                else if (i == 5 && j != 1)
+                {
+                    sum = a + 16;
+                    printf("%d ", sum);
+                    a = sum;
                 }
             }
         }
         printf("\n");
     }
 }
-
-
-
-

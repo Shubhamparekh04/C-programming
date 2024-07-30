@@ -7,6 +7,7 @@ Output:
 0, 1, 1, 2, 3, 5, 8, 13
 */
 
+/*
 #include<stdio.h>
 void main(){
     int a=0,b=1,c,n;
@@ -20,3 +21,13 @@ void main(){
         b=c;
     }
 }
+
+*/
+
+
+
+
+
+// c=a;
+// a=c+b;
+// b=c;
