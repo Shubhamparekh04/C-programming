@@ -7,7 +7,7 @@ do-while loop.
 void main(){
 char c = 'a';
     do{
-        printf("%c\n",c);
+        printf("%c ",c);
         c=c+4;
     }while(c<='z');
 }

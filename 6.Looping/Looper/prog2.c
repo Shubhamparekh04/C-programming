@@ -14,5 +14,5 @@ void main(){
         i++;
     }
 
-    printf("\nTotal number of digits:  %d",i);
+    printf("Total number of digits:  %d",i);
 }
