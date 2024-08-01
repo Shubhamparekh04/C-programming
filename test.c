@@ -41,3 +41,39 @@ void main()
     printf("Address %u", &arr);
 }
 */
+
+/*
+#include<stdio.h>
+void main(){
+    int a,b,c=0;
+
+    for(int i=1;i<=5;i++){
+        a=1;
+        for(int j=1;j<=i;j++){
+            printf("%d ",a);
+            b=a;
+            a=c+a;
+        }
+        c=b;
+        printf("\n");
+    }
+}
+*/
+
+#include <stdio.h>
+void main()
+{
+    for (int i = 1; i <= 5; i++)
+    {
+
+        for(int k = 4;k>=i;k--){
+            printf("  ");
+        }
+
+        for (int j = 1; j <= i; j++)
+        {
+            printf(" %d", j);
+        }
+        printf("\n");
+    }
+}
