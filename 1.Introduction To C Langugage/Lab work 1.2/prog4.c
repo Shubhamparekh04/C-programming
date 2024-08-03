@@ -1,7 +1,26 @@
-// Write a Program to print your name, age, and school.
+/*
+Q4.Write a Program to print the given pattern.
+*
+*
+*
+*      * *       *
+*     *   *     *
+*    *     *   *
+*   *       * *
+*  *
+*
+
+*/
 #include<stdio.h>
 void main(){
-    printf("Name: Shubham Parekh\n");
-    printf("Age: 27\n");
-    printf("School : Red & White Multimedia education Institute.");
+    printf("*\n");
+    printf("*\n");
+    printf("*\n");
+    printf("*      * *       *\n");
+    printf("*     *   *     *\n");
+    printf("*    *     *   *\n");
+    printf("*   *       * *\n");
+    printf("*  *\n");
+    printf("*");
 }
+

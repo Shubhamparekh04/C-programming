@@ -1,4 +1,5 @@
 /*
+Q2.Write a Program to print the given pattern.
 - - - - - - - -
 |             |
 R             |

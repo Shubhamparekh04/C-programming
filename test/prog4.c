@@ -1,4 +1,4 @@
-// Take input number from use & if it's +ve then convert it into -ve & if it's -ve convert it to +ve
+// Take input number from user & if it's +ve then convert it into -ve & if it's -ve convert it to +ve
 
 #include<stdio.h>
 void main(){

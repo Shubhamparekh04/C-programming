@@ -1,5 +1,5 @@
 /*
-
+Q3.Write a Program to print the given pattern.
 *
 * *
 * * *
