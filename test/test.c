@@ -168,9 +168,9 @@ Write a Program to print the below pattern using nested for loop.
 
 /*
 
- * * * 
+ * * *
 *
- * * * 
+ * * *
       *
  * * *
 
@@ -196,5 +196,173 @@ void main(){
 }
 
 */
+
+// malloc()
+
+// #include<stdio.h>
+// #include<stdlib.h>
+
+// struct emp{
+//     int eno;
+//     char ename[20];
+//     float esal;
+// };
+
+// void main(){
+//     struct emp* e;
+
+//    e  = (struct emp*) malloc(sizeof(struct emp));
+
+//     printf("Enter eno , ename & esal :");
+//     scanf("%d %s %f",&e->eno,e->ename,&e->esal);
+
+//     printf("Eno : %d\nEname : %s\nEsal : %.2f",e->eno,e->ename,e->esal);
+
+// }
+
+/*
+//foprn()
+
+#include<stdio.h>
+void main(){
+    FILE* fp;
+
+    fp = fopen("./test.txt","r");
+
+    // if(fp==NULL){
+    //     printf("File not opened");
+    // }else{
+    //     printf("File opened successfully..!");
+    // }
+
+    int ch;
+   while ((ch = fgetc(fp))!=EOF){
+        printf("%c",ch);
+   }
+}
+*/
+
+// #include<stdio.h>
+// void main(){
+//     typedef int Array[5];
+//     Array x = {10,20,30,40,50};
+
+//     for(int i=0;i<5;i++){
+//         printf("%d\n",x[i]);
+//     }
+// }
+
+// typedef premetive
+/**
+
+#include<stdio.h>
+void main(){
+    typedef int array[3];
+
+    array x={10,20,30};
+
+    for(int i=0;i<3;i++){
+
+        printf("%d ",x[i]);
+    }
+}
+ */
+
+/*
+// typedef user defined data type
+typedef char *string;
+string read(void);
+#include <stdio.h>
+void main()
+{
+    string name;
+    name = read();
+    printf("Welcome, %s", name);
+}
+
+string read()
+{
+    string name;
+    printf("Enter your name : ");
+    gets(name);
+    return name;
+}
+*/
+
+// typedef node
+/*
+struct node{
+    int data;
+    struct node* link;
+};
+
+
+typedef struct node NODE;
+typedef struct node* PTR;
+#include<stdio.h>
+void main(){
+    PTR root;
+root  = (PTR) malloc(sizeof(NODE));
+}
+*/
+
+
+// Storage class 
+/*
+1. auto (default): can't declare global
+    deafult value: garbage;
+    scope : block/method
+    life span: until block of code executes
+
+2. static:
+    default value: 0;
+    scope : block/method
+    life span: until entire program executes
+
+3. extern:
+    default value: 0;
+    scope : kind of global
+    life span: until program completed it's execution
+
+4. register (stores value in register)
+    default value: ;
+    scope : block/method
+    life span: 
+
+*/
+
+/*
+//auto
+
+#include<stdio.h>
+void main(){
+auto int a; // int a; (both same as default is auto)
+    a=10;
+    printf("%d ",a);
+}
+*/
+
+/*
+//static
+
+#include<stdio.h>
+void main(){
+
+static int a;
+printf("%d",a);
+}
+*/
+
+#include<stdio.h>
+void main(){
+    {
+    extern int i;
+    }
+    i=10;
+    printf("%d ",i);
+
+
+}
+
 
 
