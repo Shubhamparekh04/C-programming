@@ -353,16 +353,58 @@ printf("%d",a);
 }
 */
 
+// #include<stdio.h>
+// void main(){
+//     {
+//     extern int i;
+//     }
+//     i=10;
+//     printf("%d ",i);
+
+
+// }
+
+
+/*
 #include<stdio.h>
 void main(){
-    {
-    extern int i;
+    int a[5];
+    scanf("%d",&a[0]);
+
+    for(int i=0;i<5;i++){
+        printf("%d\n",a[i]);
     }
-    i=10;
-    printf("%d ",i);
-
-
 }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
