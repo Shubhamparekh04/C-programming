@@ -19,37 +19,6 @@ b[3] = 7
 b[4] = 3
 Output:
 Array C is: 8, 7, 10, 12, 5
-
-#include <stdio.h>
-void main()
-{
-    int l;
-    printf("Enter Length : ");
-    scanf("%d", &l);
-
-    int a[l], b[l], c[l];
-
-    printf("Enter array A's elements:\n");
-    for (int i = 0; i < l; i++)
-    {
-        scanf("%d, ", &a[i]);
-    }
-    printf("\nEnter array B's elements:\n");
-    for (int i = 0; i < l; i++)
-    {
-        scanf("%d", &b[i]);
-    }
-    for (int i = 0; i < l; i++)
-    {
-        c[i] = a[i] + b[i];
-    }
-
-    printf("\nArray C is:");
-    for (int i = 0; i < l; i++)
-    {   
-        printf("%d",c[i]);
-    }
-}
 */
 
 #include <stdio.h>
