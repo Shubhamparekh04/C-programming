@@ -28,21 +28,26 @@ void main()
     printf("Enter Length : ");
     scanf("%d", &l);
 
-    int a[l], b[l];
+    int a[l], b[l], c[l];
 
     printf("Enter array A's elements:\n");
     for (int i = 0; i < l; i++)
     {
-        scanf("%d", &a[i]);
+        scanf("%d, ", &a[i]);
     }
     printf("\nEnter array B's elements:\n");
     for (int i = 0; i < l; i++)
     {
         scanf("%d", &b[i]);
     }
-    printf("\nArray C is:");
     for (int i = 0; i < l; i++)
     {
-        printf("%d, ", a[i] + b[i]);
+        c[i] = a[i] + b[i];
+    }
+
+    printf("\nArray C is:");
+    for (int i = 0; i < l; i++)
+    {   
+        printf("%d",c[i]);
     }
 }
